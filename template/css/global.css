@@ -4,4 +4,24 @@ body{
 	text-align: center;
 	background-color: #DDD;
 	font-family: Arial;
+	font-size: 15px;
+}
+#central{
+	background: #fff;
+	width: 1000px;
+	height: 800px;
+	margin: 0 auto;
+	position: relative;
+	top: 30px;
+}
+input[type=text]{
+	width: 200px;
+	height: 30px;
+	font-size: 17px;
+}
+select{
+	width: 200px;
+}
+#retorno{
+	display: none;
 }
