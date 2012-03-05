@@ -9,19 +9,26 @@ body{
 #central{
 	background: #fff;
 	width: 1000px;
-	height: 800px;
+	height: 600px;
 	margin: 0 auto;
 	position: relative;
 	top: 30px;
 }
-input[type=text]{
+input[type=text], select{
 	width: 200px;
 	height: 30px;
 	font-size: 17px;
 }
-select{
+input[type=button], input[type=reset]{
 	width: 200px;
+	height: 30px;
+	font-size: 15px;
 }
-#retorno{
+#retorno, #retornoErro{
 	display: none;
+}
+#retornoErro{
+	color: #8A1F11;
+	background: #FBE3E4;
+	border: 1px solid #FBC2C4;
 }

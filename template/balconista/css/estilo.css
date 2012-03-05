@@ -7,7 +7,43 @@
 #lineButton{
 	border: 0px solid red;
 	width: 1000px;
-	height: 30px;
+	height: 25px;
 	float: left;
 	margin-top: 10px;
+}
+#retornoErro{
+	border: 1px solid #FBC2C4;
+	width: 1000px;
+	height: auto;
+	float: left;
+	margin-top: 10px;
+}
+#retorno{
+	border: 0px solid red;
+	width: 1000px;
+	height: 300px;
+	float: left;
+	margin-top: 280px;
+	overflow-y: scroll;
+	position: absolute;
+}
+table.resultado{
+	width: 980px;
+	height: auto;
+}
+
+table.resultado td.um{
+	width: 500px;
+}
+table.resultado td.dois{
+	width: 460px;
+}
+table.resultado td.tres{
+	width: 15px;
+}
+table.resultado td.quatro{
+	width: 15px;
+}
+img#edit, img#remover{
+	cursor: pointer;
 }
