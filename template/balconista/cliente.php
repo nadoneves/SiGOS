@@ -136,9 +136,9 @@ if( $editar == "" ){
 </div>
 
 <div id="lineButton">
-	<input type="button" id="cadastrar" value="Cadastrar" />
-	<input type="button" id="consultar" value="Consultar" />
-	<input type="reset" value="Limpar" />
+	<input type="button" id="cadastrar" value="Cadastrar (F9)" />
+	<input type="button" id="consultar" value="Consultar (F10)" />
+	<input type="reset" value="Limpar (F5)" />
 </div>
 </form>
 <?php }else{
@@ -270,9 +270,9 @@ $l = $sql->resultado();
 </div>
 
 <div id="lineButton">
-	<input type="button" id="editar" value="Editar" />
-	<input type="button" id="cancelar" value="Cancelar" />
-	<input type="button" id="remover" value="Remover" />
+	<input type="button" id="editar" value="Editar (F11)" />
+	<input type="button" id="cancelar" value="Cancelar (F8)" />
+	<input type="button" id="remover" value="Remover (Ctrl + F7)" />
 </div>
 </form>
 <?php } ?>
@@ -281,8 +281,11 @@ $l = $sql->resultado();
 <div id="retorno"></div>
 
 <script type="text/javascript" src="/sigos/template/js/jquery.maskedinput.js"></script>
+<script type="text/javascript" src="teclas.js"></script>
  <script>
-    $(document).ready( function(){      
+    $(document).ready( function(){
+    	$("#nome").focus();
+    	
 	    $("#cadastrar").click( function(){
 	        var nome = $("#form1 #nome").val();
 	        var identidade = $("#form1 #identidade").val();
@@ -327,7 +330,7 @@ $l = $sql->resultado();
 	            }
 	        });
 	    });
-
+    
 	    $("#consultar").click( function(){
 	        var nome = $("#nome").val();
 	        var cpf = $("#cpf").val();
@@ -353,6 +356,7 @@ $l = $sql->resultado();
 	            }
 	        });
 	    });
+		
 
 	    $("#editar").click( function(){
 	    	var idcliente = $("#form2 #idcliente").val();

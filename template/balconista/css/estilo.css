@@ -33,16 +33,16 @@ table.resultado{
 }
 
 table.resultado td.um{
-	width: 500px;
+	width: 200px;
 }
 table.resultado td.dois{
-	width: 460px;
+	width: 200px;
 }
 table.resultado td.tres{
-	width: 15px;
+	width: 200px;
 }
 table.resultado td.quatro{
-	width: 15px;
+	width: 200px;
 }
 img#edit, img#remover{
 	cursor: pointer;
