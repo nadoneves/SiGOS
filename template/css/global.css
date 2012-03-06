@@ -12,7 +12,7 @@ body{
 	height: 600px;
 	margin: 0 auto;
 	position: relative;
-	top: 30px;
+	top: 50px;
 }
 input[type=text], select{
 	width: 200px;
